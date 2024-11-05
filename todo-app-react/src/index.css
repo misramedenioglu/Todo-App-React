@@ -1,0 +1,110 @@
+body {
+  background: #282c34; /* Darker background */
+  color: #ffffff; /* Light text color for contrast */
+  font-family: 'Arial', sans-serif; /* More modern font */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  display: flex; /* Centering the todo app */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  height: 100vh; /* Full viewport height */
+}
+
+.todoapp {
+  background: #3a3f47; /* Darker todo app background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+  padding: 20px; /* Add padding for better spacing */
+  width: 400px; /* Fixed width for the app */
+}
+
+h1 {
+  text-align: center; /* Center the title */
+  margin-bottom: 20px; /* Space below title */
+  font-size: 24px; /* Title size */
+}
+
+.new-todo {
+  width: calc(100% - 20px); /* Full width minus padding */
+  padding: 10px; /* Padding for input */
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Rounded corners */
+  background: #555; /* Input background */
+  color: #fff; /* Input text color */
+  font-size: 16px; /* Input text size */
+  margin-bottom: 15px; /* Space below input */
+  transition: background 0.3s; /* Smooth background transition */
+}
+
+.new-todo:focus {
+  outline: none; /* Remove outline on focus */
+  background: #666; /* Darker background on focus */
+}
+
+.todo-list {
+  list-style: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+}
+
+.todo-list li {
+  display: flex; /* Flexbox for alignment */
+  justify-content: space-between; /* Space between label and button */
+  align-items: center; /* Center items vertically */
+  padding: 10px; /* Padding for list items */
+  border-bottom: 1px solid #444; /* Bottom border for each item */
+  transition: background 0.3s; /* Smooth background transition */
+}
+
+.todo-list li.completed {
+  text-decoration: line-through; /* Strike-through for completed tasks */
+}
+
+.todo-list li.completed label {
+  color: #9a9a9a; /* Slightly lighter gray for completed tasks */
+}
+
+.footer {
+  border-top: 1px solid #444; /* Darker footer border */
+  text-align: center; /* Center footer text */
+  padding: 10px 0; /* Padding for footer */
+}
+
+.filters {
+  display: flex; /* Flexbox for filters */
+  justify-content: center; /* Center filters */
+  margin: 10px 0; /* Margin for spacing */
+}
+
+.filters li {
+  list-style: none; /* Remove bullets */
+  margin: 0 10px; /* Space between filters */
+}
+
+.filters a {
+  color: #ffffff; /* White color for links */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.filters a:hover {
+  color: #61dafb; /* Change color on hover */
+}
+
+.clear-completed {
+  background-color: #e74c3c; /* Red background for clear button */
+  color: white; /* White text color */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded corners */
+  padding: 10px 15px; /* Padding for button */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: background 0.3s; /* Smooth background transition */
+}
+
+.clear-completed:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
+
+/* Add hover effects */
+.todo-list li:hover {
+  background-color: #444; /* Slight highlight on hover */
+}
